@@ -33,11 +33,11 @@
 
 Material Design 3 kurallarına göre tasarlanmış, karanlık mod destekli ve 120Hz akıcılığa göre optimize edilmiş arayüzler.
 
-| Mobil: Ana Sayfa | Mobil: Yapay Zeka Asistanı | Web: Haber & Duyuru Ekleme | Web: Push Bildirim Gönderme |
+| 1 | 2 | 3 | 4 |
 | :---: | :---: | :---: | :---: |
 | <img src="assets/screenshot_0.png" width="220"> | <img src="assets/screenshot_1.png" width="220"> | <img src="assets/screenshot_4.png" width="220"> | <img src="assets/screenshot_7.png" width="220"> |
 
-| Web: Dashboard | Web: Akademik Takvim Yönetimi | Web: Kategori Düzenleyici | Web: Galeri Albümleri |
+| 5 | 6 | 7 | 8 |
 | :---: | :---: | :---: | :---: |
 | <img src="assets/screenshot_2.png" width="220"> | <img src="assets/screenshot_5.png" width="220"> | <img src="assets/screenshot_6.png" width="220"> | <img src="assets/screenshot_3.png" width="220"> |
 
