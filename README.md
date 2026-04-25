@@ -1,7 +1,7 @@
 <div align="center">
-  <img src="app/src/main/res/drawable/ttmtal_logo.png" width="120" alt="TTMTAL Logo">
-  <h1>📱 TTMTAL Mobil V1.0</h1>
-  <p><b>Yapay Zeka Destekli, Askeri Sınıf Şifrelemeye Sahip Okul Ekosistemi & Yönetim Paneli</b></p>
+  <img src="docs/assets/logo.png" width="150" alt="TTMTAL Logo">
+  <h1>📱 TTMTAL Mobil - Ultimate Edition V1.0</h1>
+  <p><b>Yapay Zeka Destekli, Askeri Sınıf Şifrelemeye Sahip Kapsamlı Okul Ekosistemi & Yönetim Paneli</b></p>
   
   <a href="https://github.com/AniLLL3734/TTMTAL-Mobil/releases/latest/download/TTMTAL_Mobil_V1.0.apk">
     <img src="https://img.shields.io/badge/İndir_APK-v1.0.0-0078D4?style=for-the-badge&logo=android" alt="Download APK">
@@ -13,70 +13,101 @@
 
 <br>
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=java&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
-![Llama3](https://img.shields.io/badge/Llama_3_70B-0466C8?style=flat-square&logo=meta&logoColor=white)
-![AES256](https://img.shields.io/badge/Security-AES_256_GCM-dc2626?style=flat-square&logo=springsecurity&logoColor=white)
-![Material](https://img.shields.io/badge/UI-Material_Design_3-6200ea?style=flat-square&logo=materialdesign&logoColor=white)
+<div align="center">
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=java&logoColor=white">
+  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black">
+  <img src="https://img.shields.io/badge/Llama_3_70B-0466C8?style=flat-square&logo=meta&logoColor=white">
+  <img src="https://img.shields.io/badge/ImageKit-0078D4?style=flat-square&logo=icloud&logoColor=white">
+  <img src="https://img.shields.io/badge/Security-AES_256_GCM-dc2626?style=flat-square&logo=springsecurity&logoColor=white">
+  <img src="https://img.shields.io/badge/UI-Material_Design_3-6200ea?style=flat-square&logo=materialdesign&logoColor=white">
+</div>
 
 ---
 
-## 📸 Ekran Görüntüleri & Arayüz
+## 📖 Proje Vizyonu
+**TTMTAL Mobil**, Pendik Türk Telekom Şehit Murat Mertel Mesleki ve Teknik Anadolu Lisesi için sıfırdan inşa edilmiş, öğrencilerin ve öğretmenlerin dijital dünyadaki buluşma noktasıdır. Sadece bir bilgi ekranı değil; yapay zeka asistanı, dinamik bulut veritabanı ve üst düzey donanımsal şifreleme mimarisiyle donatılmış tam teşekküllü bir **Eğitim Teknolojisi (EdTech)** ürünüdür.
 
-Modern tasarım prensipleri ve Material Design 3 kurallarına göre tasarlanmış akıcı arayüz deneyimi. Resimlerin kalitesi yüksek tutulmuş, kullanıcı dostu panellerle donatılmıştır.
+---
 
-| Panel Görüntüsü 1 | Panel Görüntüsü 2 | Panel Görüntüsü 3 | Panel Görüntüsü 4 |
+## 📸 Arayüz & Deneyim Vitrini
+
+Material Design 3 kurallarına göre tasarlanmış, karanlık mod destekli ve 120Hz akıcılığa göre optimize edilmiş arayüzler.
+
+| Mobil: Ana Sayfa | Mobil: Yapay Zeka Asistanı | Web: Haber & Duyuru Ekleme | Web: Push Bildirim Gönderme |
 | :---: | :---: | :---: | :---: |
-| <img src="assets/screenshot_0.png" width="220"> | <img src="assets/screenshot_1.png" width="220"> | <img src="assets/screenshot_2.png" width="220"> | <img src="assets/screenshot_3.png" width="220"> |
-| <img src="assets/screenshot_4.png" width="220"> | <img src="assets/screenshot_5.png" width="220"> | <img src="assets/screenshot_6.png" width="220"> | <img src="assets/screenshot_7.png" width="220"> |
+| <img src="assets/screenshot_0.png" width="220"> | <img src="assets/screenshot_1.png" width="220"> | <img src="assets/screenshot_4.png" width="220"> | <img src="assets/screenshot_7.png" width="220"> |
 
-> *Not: Yukarıdaki görseller uygulamanın ve yönetim panelinin farklı kesitlerini içermektedir.*
-
----
-
-## 🧠 Llama 3 Destekli Okul Asistanı
-Sıradan bir bilgi sisteminden öteye geçerek, projeye entegre edilen **Groq Cloud API (Llama 3.3 70B)** modeli ile öğrencilerin tüm sorularını anlayan ve okulun veritabanına göre yanıt veren "Okul Asistanı" geliştirilmiştir.
-- **RAG Mimarisi:** Okul verileri bağlam olarak yapay zekaya beslenir, böylece halüsinasyon oranı sıfıra indirilir.
-- **Gerçek Zamanlı Sohbet:** WhatsApp tarzı, yüksek performanslı chat arayüzü.
-
-## 🛡️ Askeri Sınıf Güvenlik (Zero-Trust Architecture)
-Bu proje, mobil güvenlikte sektör standartlarını yeniden belirler:
-1. **Donanımsal Şifreleme (Android Jetpack Security):** API anahtarları asla APK içine gömülmez. `EncryptedSharedPreferences` kullanılarak cihazın TEE (Trusted Execution Environment) çipi içindeki AES-256 Master Key ile şifrelenir.
-2. **Dinamik Yapılandırma:** Tüm kritik anahtarlar (Yapay Zeka, ImageKit) Firebase üzerinden anlık çekilir. Telefon root'lu olsa bile verilere ulaşılamaz.
-
-## ⚙️ Teknik Mimarisi & Altyapı
-- **Bulut Veritabanı:** Firebase Realtime Database ile `0ms` gecikmeli senkronizasyon (SyncManager).
-- **Görüntü Optimizasyonu:** `ImageKit.io` entegrasyonu ile fotoğraflar cihazın çözünürlüğüne göre sunucuda %80 sıkıştırılarak anında getirilir. (Parallax kaydırma efektleriyle desteklenmiştir).
-- **Yönetim Paneli:** Öğretmenlerin içerik ekleyebilmesi için özel tasarlanmış, Firebase yetkilendirmeli, tamamen responsive Web Paneli.
+| Web: Dashboard | Web: Akademik Takvim Yönetimi | Web: Kategori Düzenleyici | Web: Galeri Albümleri |
+| :---: | :---: | :---: | :---: |
+| <img src="assets/screenshot_2.png" width="220"> | <img src="assets/screenshot_5.png" width="220"> | <img src="assets/screenshot_6.png" width="220"> | <img src="assets/screenshot_3.png" width="220"> |
 
 ---
 
-## 🛠️ Kurulum (Geliştiriciler İçin)
+## 🚀 Temel Özellikler ve Kullanım Rehberi
 
-Proje tamamen açık kaynak olup, kendi okulunuza uyarlayabilirsiniz:
+### 📱 1. Mobil Uygulama (Öğrenciler ve Veliler İçin)
+*   **🤖 Llama 3 Okul Asistanı:** Sağ alttaki chat butonuna basarak RAG (Retrieval-Augmented Generation) mimarisiyle çalışan asistana bağlanın. "Bilişim bölümü nerede?", "Okula hangi otobüs gider?" gibi tüm sorulara okulun kendi veritabanından anında yanıt verir.
+*   **📰 Anlık Haber & Duyurular:** `0ms` Firebase senkronizasyonu ile okul idaresinin yayınladığı duyurular saniyesinde ekrana düşer.
+*   **🖼️ Akıllı Galeri (ImageKit):** Fotoğraflar sunucuda cihazınızın çözünürlüğüne göre dinamik olarak (%80 tasarruf) sıkıştırılır ve parallax (derinlik) efektiyle listelenir. Tıklandığında Instagram tarzı yatay kaydırmalı (Swipe) tam ekran inceleme sunar.
+*   **📅 Akademik Takvim & Notlar:** Yaklaşan etkinlikleri, sınav tarihlerini ve okulun eklediği ders notlarını kategorize edilmiş şekilde bulabilirsiniz.
 
-```bash
-# 1. Repoyu Klonla
-git clone https://github.com/AniLLL3734/TTMTAL-Mobil.git
+### 💻 2. Web Yönetim Paneli (Öğretmenler & İdare İçin)
+*   [TTMTAL Admin Panel](https://anilll3734.github.io/TTMTAL-Mobil/) adresinden kurumsal mail adresinizle kayıt olun.
+*   **Admin Onay Sistemi:** Güvenlik gereği yeni kayıt olan öğretmenler sisteme giremez. Mevcut bir adminin sizi `approvals` menüsünden onaylaması gerekir.
+*   **İçerik Yönetimi (CMS):** Sol menüyü kullanarak Haber, Galeri Albümü, Takvim Etkinliği veya Not ekleyebilirsiniz. Eklediğiniz her şey **hiçbir güncelleme gerektirmeden** o saniye öğrencinin telefonunda belirir.
+*   **🔔 Push Bildirim Gönderme:** Paneldeki "Bildirim Gönder" sayfasından yazdığınız mesaj, uygulamayı yüklemiş olan binlerce öğrencinin telefonuna anında bildirim (FCM) olarak düşer.
 
-# 2. Firebase Kurulumu
-# Firebase Console'dan indirdiğiniz google-services.json dosyasını 'app/' dizinine ekleyin.
+---
 
-# 3. Güvenli Anahtarlar (Local Build İçin)
-# app/src/main/res/values/secrets.xml dosyasını oluşturun:
-# (Not: Bu dosya .gitignore ile korunmaktadır)
-<resources>
-    <string name="imagekit_public_key">YOUR_KEY</string>
-    <string name="groq_api_key">YOUR_KEY</string>
-    <string name="default_web_client_id">YOUR_ID</string>
-</resources>
+## 🛡️ Askeri Sınıf Güvenlik Mimarisi (Zero-Trust)
+
+Projeyi diğer öğrenci projelerinden ayıran en büyük fark güvenlik altyapısıdır:
+
+```mermaid
+graph TD;
+    A[APK Kodları] -->|Gizli Anahtar YOK| B(Firebase Remote Config);
+    B -->|Şifreli İletişim| C[Telefon Hafızası];
+    C -->|AES-256 GCM Şifreleme| D[EncryptedSharedPreferences];
+    D -->|Sadece Uygulama İçi| E[Yapay Zeka & Medya Sunucusu];
 ```
 
-> **Önemli Firebase Ayarı:** Cihazların güncel anahtarları alabilmesi için Firebase Realtime Database'de `remote_config` düğümünü oluşturup API anahtarlarınızı oraya da girmelisiniz.
+1.  **Anahtarsız APK:** Kodların içinde `API_KEY` bulunmaz. Groq (Yapay Zeka) ve ImageKit anahtarları uygulamanın ilk açılışında Firebase'den **(Remote Config)** çekilir.
+2.  **Donanımsal Şifreleme:** Çekilen anahtarlar, Android'in `Jetpack Security Crypto` kütüphanesi ile cihazın fiziksel güvenlik çipinde (TEE) mühürlenir. Cihaz root'lu olsa dahi bu dosyalara erişilemez.
+3.  **Firebase Security Rules:** Web sitesinde görünen Firebase bağlantı anahtarları "sadece kapının adresidir", kilidi açmaz. Veritabanına sadece `Auth` doğrulaması olan yetkili öğretmenler yazabilir/okuyabilir.
+
+---
+
+## ⚙️ Kurulum & Geliştirme (Geliştiriciler İçin)
+
+Kodu kendi projelerinizde kullanmak veya geliştirmek için adımlar:
+
+### 1. Gereksinimler
+*   Android Studio Ladybug (veya daha güncel)
+*   Java 17 ve Gradle 8.x
+*   Bir Firebase hesabı ve bir ImageKit.io hesabı.
+
+### 2. Yapılandırma
+1. Repoyu klonlayın: `git clone https://github.com/AniLLL3734/TTMTAL-Mobil.git`
+2. `google-services.json` dosyanızı oluşturup `app/` dizinine ekleyin.
+3. **Local Build Sırları:** Geliştirme sırasında uygulamanın çökmemesi için `app/src/main/res/values/secrets.xml` oluşturun (Bu dosya repoya gönderilmez):
+   ```xml
+   <resources>
+       <string name="imagekit_public_key">public_...</string>
+       <string name="groq_api_key">gsk_...</string>
+       <string name="default_web_client_id">GOOGLE_CLIENT_ID_BURAYA</string>
+   </resources>
+   ```
+4. **Firebase Canlı Anahtarları:** Firebase Console -> Realtime Database'e gidin ve ana dizine `remote_config` ekleyip içine şu Key-Value değerlerini ekleyin:
+   * `groq_api_key` : (Sizin Groq anahtarınız)
+   * `imagekit_public_key` : (Sizin ImageKit Public anahtarınız)
+   * `imagekit_url_endpoint` : (https://ik.imagekit.io/...)
+
+### 3. Derleme
+Terminal üzerinden: `./gradlew assembleDebug` komutunu çalıştırarak APK çıktınızı alabilirsiniz.
 
 ---
 <div align="center">
   <b>Geliştirici:</b> <a href="https://github.com/AniLLL3734">AniLLL3734</a> & Antigravity AI
   <br>
-  <i>MIT License ile Açık Kaynak</i>
+  <i>MIT License ile Açık Kaynak Topluluğuna Armağan Edilmiştir</i>
 </div>
