@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTMTAL Mobil - Admin Paneli</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📱</text></svg>">
+</head>
+<body class="dark-mode">
+    <!-- Login Screen -->
+    <div id="login-screen" class="screen active">
+        <div class="login-card">
+            <img src="../app/src/main/res/drawable/ttmtal_logo.png" alt="Logo" class="login-logo" style="width: 100px; height: 100px; display: block; margin: 0 auto 20px; object-fit: contain;">
+            <h1>Yönetim Paneli</h1>
+            <p>TTMTAL Mobil uygulamasına hoş geldiniz.</p>
+            <form id="login-form">
+                <div class="input-group">
+                    <input type="email" id="login-email" placeholder="E-posta" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="login-password" placeholder="Şifre" required>
+                </div>
+                <button type="button" id="btn-login" class="primary-btn">Giriş Yap</button>
+            </form>
+            <div class="login-footer">
+                <span>Öğretmen misiniz?</span>
+                <a href="kayit.html" id="link-register">Kayıt Oluşturun</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Dashboard Screen -->
+    <div id="main-screen" class="screen">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="../app/src/main/res/drawable/ttmtal_logo.png" alt="Logo" class="sidebar-logo" style="width: 40px; height: 40px; object-fit: contain;">
+                <span>TTMTAL Admin</span>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active" data-section="dashboard"><i class="fas fa-chart-line"></i> Dashboard</a>
+                <a href="#" class="nav-item admin-only" data-section="approvals"><i class="fas fa-user-check"></i> Öğretmen Onayları</a>
+                <a href="#" class="nav-item" data-section="news"><i class="fas fa-newspaper"></i> Haberler & Duyurular</a>
+                <a href="#" class="nav-item" data-section="categories"><i class="fas fa-th-large"></i> Kategoriler & Keşfet</a>
+                <a href="#" class="nav-item" data-section="gallery"><i class="fas fa-images"></i> Galeri</a>
+                <a href="#" class="nav-item" data-section="calendar"><i class="fas fa-calendar-alt"></i> Akademik Takvim</a>
+                <a href="#" class="nav-item" data-section="notes"><i class="fas fa-sticky-note"></i> Notlar</a>
+                <a href="#" class="nav-item" data-section="notifications"><i class="fas fa-paper-plane"></i> Bildirim Gönder</a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-info">
+                    <span id="user-display-name">Yükleniyor...</span>
+                    <small id="user-role">Öğretmen</small>
+                </div>
+                <button id="btn-logout" class="icon-btn" title="Çıkış Yap"><i class="fas fa-sign-out-alt"></i></button>
+            </div>
+        </aside>
+
+        <main class="content">
+            <section id="section-dashboard" class="content-section active">
+                <header>
+                    <h2>Genel Bakış</h2>
+                </header>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-label">Aktif Haberler</span>
+                        <span class="stat-value" id="stat-news">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-label">Planlanan Etkinlikler</span>
+                        <span class="stat-value" id="stat-events">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-label">Toplam Öğretmen</span>
+                        <span class="stat-value" id="stat-teachers">0</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-approvals" class="content-section">
+                <header>
+                    <h2>Bekleyen Öğretmen Onayları</h2>
+                </header>
+                <div class="table-container">
+                    <table id="table-approvals">
+                        <thead>
+                            <tr>
+                                <th>Ad Soyad</th>
+                                <th>E-posta</th>
+                                <th>Kayıt Tarihi</th>
+                                <th>İşlem</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="section-news" class="content-section">
+                <header>
+                    <h2>Haberler & Duyurular</h2>
+                    <button class="primary-btn small add-btn" data-type="news"><i class="fas fa-plus"></i> Yeni Ekle</button>
+                </header>
+                <div class="items-grid" id="grid-news"></div>
+            </section>
+
+            <section id="section-gallery" class="content-section">
+                <header>
+                    <h2>Galeri Albümleri</h2>
+                    <button class="primary-btn small add-btn" data-type="gallery"><i class="fas fa-plus"></i> Yeni Albüm</button>
+                </header>
+                <div class="items-grid" id="grid-gallery"></div>
+            </section>
+
+            <section id="section-calendar" class="content-section">
+                <header>
+                    <h2>Akademik Takvim</h2>
+                    <button class="primary-btn small add-btn" data-type="calendar"><i class="fas fa-plus"></i> Etkinlik Ekle</button>
+                </header>
+                <div class="table-container">
+                    <table id="table-calendar">
+                        <thead>
+                            <tr><th>Etkinlik</th><th>Tarih</th><th>İşlem</th></tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="section-categories" class="content-section">
+                <header>
+                    <h2>Kategoriler & Keşfet</h2>
+                    <button class="primary-btn small add-btn" data-type="categories"><i class="fas fa-plus"></i> Yeni Kategori</button>
+                </header>
+                <div class="items-grid" id="grid-categories"></div>
+            </section>
+
+            <section id="section-notes" class="content-section">
+                <header>
+                    <h2>Okul Notları</h2>
+                    <button class="primary-btn small add-btn" data-type="notes"><i class="fas fa-plus"></i> Yeni Not</button>
+                </header>
+                <div class="items-grid" id="grid-notes"></div>
+            </section>
+
+            <section id="section-notifications" class="content-section">
+                <header>
+                    <h2>Push Bildirim Gönder</h2>
+                </header>
+                <div class="stat-card" style="max-width: 600px;">
+                    <p style="margin-bottom:20px; color:var(--text-dim);">Buradan göndereceğiniz mesajlar uygulamayı yükleyen tüm öğrencilerin telefonuna anında bildirim olarak düşer.</p>
+                    <input type="text" id="notif-title" placeholder="Bildirim Başlığı (Örn: Okul Duyurusu)" style="margin-bottom:15px;">
+                    <textarea id="notif-body" placeholder="Mesajınız..." style="width:100%; height:120px; background:rgba(0,0,0,0.2); color:white; border:1px solid var(--border-color); padding:15px; border-radius:12px; margin-bottom:20px;"></textarea>
+                    <button id="btn-send-push" class="primary-btn" style="width:100%;"><i class="fas fa-paper-plane"></i> Şimdi Herkese Gönder</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Universal Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h3 id="modal-title">Ekle</h3>
+            <div id="modal-form-container"></div>
+            <div class="modal-actions">
+                <button id="btn-modal-cancel" class="secondary-btn">İptal</button>
+                <button id="btn-modal-save" class="primary-btn">Kaydet</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
