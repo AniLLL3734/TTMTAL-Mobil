@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/surfaceColor"
+        android:padding="20dp"
+        android:elevation="4dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ayarlar"
+            android:textColor="@color/primaryColor"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Giriş Yap -->
+            <LinearLayout
+                android:id="@+id/layoutLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingVertical="16dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+                <ImageView android:layout_width="44dp" android:layout_height="44dp" android:background="@drawable/bg_circle_icon" android:backgroundTint="#E0E7FF" android:src="@android:drawable/ic_menu_myplaces" android:padding="10dp" app:tint="@color/primaryColor"/>
+                <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Giriş Yap" android:textSize="17sp" android:textStyle="bold" android:layout_marginStart="16dp" android:textColor="@color/primaryColor"/>
+                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@android:drawable/ic_media_play" app:tint="@color/colorGray"/>
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/colorLightGray" android:layout_marginVertical="4dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Genel Ayarlar" android:textSize="13sp" android:textStyle="bold" android:textColor="@color/secondaryTextColor" android:layout_marginTop="16dp" android:layout_marginBottom="8dp"/>
+
+            <!-- Bildirimler -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:paddingVertical="14dp">
+                <ImageView android:layout_width="44dp" android:layout_height="44dp" android:background="@drawable/bg_circle_icon" android:backgroundTint="#FCE7F3" android:src="@android:drawable/ic_popup_reminder" android:padding="10dp" app:tint="#DB2777"/>
+                <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Bildirimleri Al" android:textSize="16sp" android:layout_marginStart="16dp" android:textColor="@color/primaryTextColor"/>
+                <Switch android:id="@+id/switchNotifications" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true"/>
+            </LinearLayout>
+
+            <!-- Karanlık Mod -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:paddingVertical="14dp">
+                <ImageView android:layout_width="44dp" android:layout_height="44dp" android:background="@drawable/bg_circle_icon" android:backgroundTint="#E0E7FF" android:src="@android:drawable/ic_menu_gallery" android:padding="10dp" app:tint="@color/primaryDarkColor"/>
+                <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Karanlık Mod" android:textSize="16sp" android:layout_marginStart="16dp" android:textColor="@color/primaryTextColor"/>
+                <Switch android:id="@+id/switchDarkMode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false"/>
+            </LinearLayout>
+
+
+
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/colorLightGray" android:layout_marginVertical="4dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Uygulama Hakkında" android:textSize="13sp" android:textStyle="bold" android:textColor="@color/secondaryTextColor" android:layout_marginTop="16dp" android:layout_marginBottom="8dp"/>
+
+            <!-- Gizlilik -->
+            <LinearLayout android:id="@+id/layoutPrivacy" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:paddingVertical="14dp" android:background="?attr/selectableItemBackground" android:clickable="true" android:focusable="true">
+                <ImageView android:layout_width="44dp" android:layout_height="44dp" android:background="@drawable/bg_circle_icon" android:backgroundTint="#F3F4F6" android:src="@android:drawable/ic_menu_info_details" android:padding="10dp" app:tint="@color/colorGray"/>
+                <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Gizlilik Politikası" android:textSize="16sp" android:layout_marginStart="16dp" android:textColor="@color/primaryTextColor"/>
+                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@android:drawable/ic_media_play" app:tint="@color/colorGray"/>
+            </LinearLayout>
+
+            <!-- Derecelendir -->
+            <LinearLayout android:id="@+id/layoutRate" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:paddingVertical="14dp" android:background="?attr/selectableItemBackground" android:clickable="true" android:focusable="true">
+                <ImageView android:layout_width="44dp" android:layout_height="44dp" android:background="@drawable/bg_circle_icon" android:backgroundTint="#FEF3C7" android:src="@android:drawable/btn_star" android:padding="10dp" app:tint="#F59E0B"/>
+                <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Bu uygulamayı derecelendir" android:textSize="16sp" android:layout_marginStart="16dp" android:textColor="@color/primaryTextColor"/>
+                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@android:drawable/ic_media_play" app:tint="@color/colorGray"/>
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/colorLightGray" android:layout_marginVertical="4dp"/>
+
+            <!-- Çıkış Yap -->
+            <LinearLayout android:id="@+id/layoutLogout" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:paddingVertical="14dp" android:background="?attr/selectableItemBackground" android:clickable="true" android:focusable="true">
+                <ImageView android:layout_width="44dp" android:layout_height="44dp" android:background="@drawable/bg_circle_icon" android:backgroundTint="#FEE2E2" android:src="@android:drawable/ic_lock_power_off" android:padding="10dp" app:tint="#EF4444"/>
+                <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Çıkış Yap" android:textSize="16sp" android:layout_marginStart="16dp" android:textColor="#EF4444" android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

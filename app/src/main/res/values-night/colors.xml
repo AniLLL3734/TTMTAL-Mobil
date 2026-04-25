@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#3B82F6</color> <!-- Lighter blue for dark mode -->
+    <color name="primaryDarkColor">#000000</color>
+    
+    <color name="backgroundColor">#0F172A</color> <!-- Deep Slate Blue/Black -->
+    <color name="surfaceColor">#1E293B</color> <!-- Lighter Slate for cards -->
+    
+    <color name="primaryTextColor">#F8FAFC</color> <!-- White/Off-white -->
+    <color name="secondaryTextColor">#94A3B8</color> <!-- Muted bluish gray -->
+    
+    <color name="colorLightGray">#334155</color> <!-- Darker borders -->
+</resources>

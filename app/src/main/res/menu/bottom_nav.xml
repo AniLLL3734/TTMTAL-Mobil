@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_home" android:icon="@drawable/ic_home" android:title="Ana Sayfa" />
+    <item android:id="@+id/nav_programs" android:icon="@android:drawable/ic_menu_agenda" android:title="Bölümler" />
+    <item android:id="@+id/nav_search" android:icon="@android:drawable/ic_menu_search" android:title="Keşfet" />
+    <item android:id="@+id/nav_calendar" android:icon="@drawable/ic_calendar" android:title="Takvim" />
+    <item android:id="@+id/nav_settings" android:icon="@android:drawable/ic_menu_manage" android:title="Profil" />
+</menu>

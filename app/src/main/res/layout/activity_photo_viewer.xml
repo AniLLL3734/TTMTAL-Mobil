@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="24dp"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:padding="8dp"
+        android:background="@drawable/bg_circle_icon"
+        android:backgroundTint="#80000000" />
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/drawer_ai" android:icon="@android:drawable/ic_menu_help" android:title="Okul Asistanı" />
+        <item android:id="@+id/drawer_about" android:icon="@android:drawable/ic_menu_info_details" android:title="Hakkımızda" />
+        <item android:id="@+id/drawer_gallery" android:icon="@android:drawable/ic_menu_gallery" android:title="Foto Galeri" />
+        <item android:id="@+id/drawer_contact" android:icon="@android:drawable/ic_menu_call" android:title="Bize Ulaşın" />
+    </group>
+    <item android:title="Bağlantılar">
+        <menu>
+            <item android:id="@+id/drawer_web" android:icon="@android:drawable/ic_menu_view" android:title="Web Sitemiz" />
+            <item android:id="@+id/drawer_ig" android:icon="@android:drawable/ic_menu_camera" android:title="Instagram" />
+            <item android:id="@+id/drawer_yt" android:icon="@android:drawable/ic_media_play" android:title="Youtube Kanalı" />
+        </menu>
+    </item>
+</menu>

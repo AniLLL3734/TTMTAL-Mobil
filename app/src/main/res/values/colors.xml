@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Premium Color Palette -->
+    <color name="primaryColor">#1E3A8A</color> <!-- Deep Indigo Blue -->
+    <color name="primaryLightColor">#3B82F6</color> <!-- Soft Blue -->
+    <color name="primaryDarkColor">#0F172A</color> <!-- Very Dark Slate -->
+    
+    <color name="colorAccent">#F59E0B</color> <!-- Amber / Gold -->
+    
+    <color name="backgroundColor">#F4F7F9</color> <!-- Soft grayish blue bg -->
+    <color name="surfaceColor">#FFFFFF</color>
+    
+    <color name="primaryTextColor">#111827</color> <!-- Almost black -->
+    <color name="secondaryTextColor">#6B7280</color> <!-- Muted gray -->
+    
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGray">#9E9E9E</color>
+    <color name="colorLightGray">#E0E0E0</color>
+    
+    <color name="cardShadowStart">#1A000000</color>
+    <color name="cardShadowEnd">#00000000</color>
+</resources>

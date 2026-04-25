@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TTMTAL Mobil</string>
+    <string name="open">Open Navigation Drawer</string>
+    <string name="close">Close Navigation Drawer</string>
+    <!-- NOT: Google Web Client ID 'secrets.xml' dosyası içinde tanımlanmalıdır. -->
+    <!-- GitHub'dan indirenler için: secrets.xml oluşturup default_web_client_id ekleyin. -->
+</resources>

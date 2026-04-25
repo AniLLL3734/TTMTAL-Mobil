@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarAbout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primaryColor"
+            app:title="Hakkımızda"
+            app:titleTextColor="@color/colorWhite"
+            app:navigationIcon="@drawable/ic_home" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ttmtal_logo"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Türk Telekom Şehit Murat Mertel\nMesleki ve Teknik Anadolu Lisesi"
+                android:textAlignment="center"
+                android:textColor="@color/primaryColor"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🔭 Vizyon" android:textColor="@color/primaryColor" android:textSize="18sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Türkiye Yüzyılı'nın inşasında söz sahibi olacak aranan elemanlar yetiştirmek." android:textColor="@color/primaryTextColor" android:textSize="15sp" android:lineSpacingExtra="4dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🎯 Misyon" android:textColor="@color/primaryColor" android:textSize="18sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Hedefleri doğrultusunda sürekli ve yeniden öğrenme çabasına sahip; var olan bilgiyi yeni bilgiler öğrenmek ve üretmek için kullanabilen; ülkemizde ve dünyada alanında ihtiyaç duyulan nitelikli iş gücünü karşılayan; millî, manevi ve kültürel değerlerine bağlı; sağlıklı, erdemli vatanperver nesiller yetiştirmek." android:textColor="@color/primaryTextColor" android:textSize="15sp" android:lineSpacingExtra="4dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📊 Okul Bilgileri" android:textColor="@color/primaryColor" android:textSize="18sp" android:textStyle="bold" android:layout_marginBottom="12dp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Öğretmen: 55 | Öğrenci: 655 | Derslik: 15\nBT Sınıfı: 6 | Kütüphane: 2 (2549 kitap)\nKonferans Salonu: 1 | Yemekhane: 1\nÖğretim Şekli: Tekli\nSaatler: 09:00 - 17:00\nIsınma: Doğalgaz | İnternet: Fatih Projesi Fiber\nYabancı Dil: İngilizce | Servis: Var" android:textColor="@color/primaryTextColor" android:textSize="14sp" android:lineSpacingExtra="6dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="@color/primaryColor">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🏆 2025 Taban Puan Bilgileri" android:textColor="@color/colorWhite" android:textSize="18sp" android:textStyle="bold" android:layout_marginBottom="12dp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Merkezi Taban Puan: 345,0686\nTaban Yüzdelik: %20,92\nYerel Taban Puan: 80,3407" android:textColor="@color/colorWhite" android:textSize="15sp" android:lineSpacingExtra="6dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

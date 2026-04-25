@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Greeting Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:gravity="center_vertical">
+            
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvGreetingText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Günaydın,"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="16sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Değerli Öğrencimiz 👋"
+                    android:textColor="@color/primaryTextColor"
+                    android:textStyle="bold"
+                    android:textSize="22sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Quick Actions Horizontal Scroll -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:clipToPadding="false"
+            android:paddingHorizontal="16dp">
+            
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                
+                <!-- Action 1 -->
+                <LinearLayout
+                    android:id="@+id/actionProgram"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginEnd="12dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true">
+                    <ImageView
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/bg_circle_icon"
+                        android:backgroundTint="#E0E7FF"
+                        android:padding="16dp"
+                        android:src="@android:drawable/ic_menu_agenda"
+                        app:tint="@color/primaryColor" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Program"
+                        android:textSize="12sp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/primaryTextColor"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                
+                <!-- Action 3 -->
+                <LinearLayout
+                    android:id="@+id/actionNotlar"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginEnd="12dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true">
+                    <ImageView
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/bg_circle_icon"
+                        android:backgroundTint="#FCE7F3"
+                        android:padding="16dp"
+                        android:src="@android:drawable/ic_menu_edit"
+                        app:tint="#DB2777" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Notlar"
+                        android:textSize="12sp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/primaryTextColor"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <!-- Action 4 -->
+                <LinearLayout
+                    android:id="@+id/actionIletisim"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginEnd="12dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true">
+                    <ImageView
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/bg_circle_icon"
+                        android:backgroundTint="#D1FAE5"
+                        android:padding="16dp"
+                        android:src="@android:drawable/ic_menu_info_details"
+                        app:tint="#059669" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="İletişim"
+                        android:textSize="12sp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/primaryTextColor"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPagerSlider"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="8dp"
+            android:clipToPadding="false"
+            android:paddingHorizontal="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="24dp"
+            android:paddingBottom="8dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Öne Çıkanlar"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tümünü Gör"
+                android:textColor="@color/primaryLightColor"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewNews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="24dp" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
