@@ -3,7 +3,7 @@
   <h1>📱 TTMTAL Mobil - Ultimate Edition V1.0</h1>
   <p><b>Yapay Zeka Destekli, Askeri Sınıf Şifrelemeye Sahip Kapsamlı Okul Ekosistemi & Yönetim Paneli</b></p>
   
-  <a href="https://github.com/AniLLL3734/TTMTAL-Mobil/releases/latest/download/TTMTAL_Mobil_V1.0.apk">
+  <a href="https://github.com/AniLLL3734/TTMTAL-Mobil/releases/download/v1.0.0/app-debug.apk">
     <img src="https://img.shields.io/badge/İndir_APK-v1.0.0-0078D4?style=for-the-badge&logo=android" alt="Download APK">
   </a>
   <a href="https://anilll3734.github.io/TTMTAL-Mobil/">
