@@ -9,6 +9,13 @@
 
 ---
 
+## 🔗 Hızlı Bağlantılar
+
+- **📥 Uygulamayı İndir (APK):** [TTMTAL Mobil V1.0.apk](https://github.com/AniLLL3734/TTMTAL-Mobil/releases/latest/download/TTMTAL_Mobil_V1.0.apk)
+- **🌐 Yönetim Paneli (Canlı):** [TTMTAL Admin Panel](https://anilll3734.github.io/TTMTAL-Mobil/)
+
+---
+
 ## ✨ Öne Çıkan Özellikler
 
 - **🤖 Okul Asistanı (AI):** Llama 3 70B modeliyle güçlendirilmiş, okul hakkındaki tüm soruları (projeler, bölümler, ulaşım vb.) anında yanıtlayan akıllı asistan.
