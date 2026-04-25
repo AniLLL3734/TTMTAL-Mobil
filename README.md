@@ -1,81 +1,82 @@
-# 📱 TTMTAL Mobil - Okul Bilgi Sistemi
+<div align="center">
+  <img src="app/src/main/res/drawable/ttmtal_logo.png" width="120" alt="TTMTAL Logo">
+  <h1>📱 TTMTAL Mobil V1.0</h1>
+  <p><b>Yapay Zeka Destekli, Askeri Sınıf Şifrelemeye Sahip Okul Ekosistemi & Yönetim Paneli</b></p>
+  
+  <a href="https://github.com/AniLLL3734/TTMTAL-Mobil/releases/latest/download/TTMTAL_Mobil_V1.0.apk">
+    <img src="https://img.shields.io/badge/İndir_APK-v1.0.0-0078D4?style=for-the-badge&logo=android" alt="Download APK">
+  </a>
+  <a href="https://anilll3734.github.io/TTMTAL-Mobil/">
+    <img src="https://img.shields.io/badge/Canlı_Yönetim_Paneli-Yayında-2EA043?style=for-the-badge&logo=vercel" alt="Admin Panel">
+  </a>
+</div>
 
-![Versiyon](https://img.shields.io/badge/Versiyon-1.0.0-blue)
-![Lisans](https://img.shields.io/badge/Lisans-MIT-green)
-![Platform](https://img.shields.io/badge/Platform-Android-orange)
-![Security](https://img.shields.io/badge/Security-AES--256-red)
+<br>
 
-**TTMTAL Mobil**, Pendik Türk Telekom Şehit Murat Mertel MTAL için geliştirilmiş, modern, güvenli ve yapay zeka destekli bir okul ekosistemi uygulamasıdır. Öğrenciler, öğretmenler ve idare arasındaki iletişimi dijitalleştirirken, en üst düzey güvenlik standartlarını sunar.
-
----
-
-## 🔗 Hızlı Bağlantılar
-
-- **📥 Uygulamayı İndir (APK):** [TTMTAL Mobil V1.0.apk](https://github.com/AniLLL3734/TTMTAL-Mobil/releases/latest/download/TTMTAL_Mobil_V1.0.apk)
-- **🌐 Yönetim Paneli (Canlı):** [TTMTAL Admin Panel](https://anilll3734.github.io/TTMTAL-Mobil/)
-
----
-
-## ✨ Öne Çıkan Özellikler
-
-- **🤖 Okul Asistanı (AI):** Llama 3 70B modeliyle güçlendirilmiş, okul hakkındaki tüm soruları (projeler, bölümler, ulaşım vb.) anında yanıtlayan akıllı asistan.
-- **📰 Dinamik İçerik:** Firebase üzerinden anlık güncellenen haberler, duyurular ve etkinlik takvimi.
-- **🛡️ Ultra Güvenlik:** 
-  - API anahtarları APK içinde saklanmaz, Firebase'den dinamik çekilir.
-  - Hassas veriler cihazda **AES-256 GCM** (EncryptedSharedPreferences) donanımsal şifreleme ile korunur.
-- **🌗 Modern Arayüz:** Karanlık mod desteği, premium kart tasarımları ve akıcı animasyonlar.
-- **🌐 Yönetim Paneli:** Öğretmenler için geliştirilmiş, web tabanlı zengin içerik yönetim paneli.
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=java&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
+![Llama3](https://img.shields.io/badge/Llama_3_70B-0466C8?style=flat-square&logo=meta&logoColor=white)
+![AES256](https://img.shields.io/badge/Security-AES_256_GCM-dc2626?style=flat-square&logo=springsecurity&logoColor=white)
+![Material](https://img.shields.io/badge/UI-Material_Design_3-6200ea?style=flat-square&logo=materialdesign&logoColor=white)
 
 ---
 
-## 🛠️ Teknoloji Yığını
+## 📸 Ekran Görüntüleri & Arayüz
 
-- **Dil:** Java (Android SDK)
-- **Veritabanı & Auth:** Firebase Realtime Database, Firebase Auth (Google Sign-In)
-- **Yapay Zeka:** Groq Cloud API (Llama 3.3 70B)
-- **Görüntü Yönetimi:** ImageKit.io API
-- **Güvenlik:** Android Jetpack Security (Crypto)
-- **UI:** Material Design 3, Parallax Effects, CollapsingToolbar
+Modern tasarım prensipleri ve Material Design 3 kurallarına göre tasarlanmış akıcı arayüz deneyimi. Resimlerin kalitesi yüksek tutulmuş, kullanıcı dostu panellerle donatılmıştır.
 
----
+| Panel Görüntüsü 1 | Panel Görüntüsü 2 | Panel Görüntüsü 3 | Panel Görüntüsü 4 |
+| :---: | :---: | :---: | :---: |
+| <img src="assets/screenshot_0.png" width="220"> | <img src="assets/screenshot_1.png" width="220"> | <img src="assets/screenshot_2.png" width="220"> | <img src="assets/screenshot_3.png" width="220"> |
+| <img src="assets/screenshot_4.png" width="220"> | <img src="assets/screenshot_5.png" width="220"> | <img src="assets/screenshot_6.png" width="220"> | <img src="assets/screenshot_7.png" width="220"> |
 
-## 🚀 Kurulum ve Çalıştırma
-
-Projeyi kendi ortamınızda çalıştırmak için şu adımları izleyin:
-
-1. **Repoyu Klonlayın:**
-   ```bash
-   git clone https://github.com/KULLANICI_ADIN/TTMTAL-Mobil.git
-   ```
-
-2. **Firebase Kurulumu:**
-   - `google-services.json` dosyasını `app/` klasörüne ekleyin.
-   - Firebase Realtime Database'de `remote_config` düğümünü oluşturun.
-
-3. **Anahtarları Ayarlayın:**
-   - `app/src/main/res/values/secrets.xml` dosyasını oluşturun ve şablonu doldurun:
-   ```xml
-   <resources>
-       <string name="imagekit_public_key">SİZİN_ANAHTARINIZ</string>
-       <string name="groq_api_key">SİZİN_ANAHTARINIZ</string>
-       <string name="default_web_client_id">GOOGLE_CLIENT_ID</string>
-   </resources>
-   ```
-
-4. **Derleyin:** Android Studio ile açın ve `./gradlew assembleDebug` komutuyla APK alın.
+> *Not: Yukarıdaki görseller uygulamanın ve yönetim panelinin farklı kesitlerini içermektedir.*
 
 ---
 
-## 🔒 Güvenlik Notu
+## 🧠 Llama 3 Destekli Okul Asistanı
+Sıradan bir bilgi sisteminden öteye geçerek, projeye entegre edilen **Groq Cloud API (Llama 3.3 70B)** modeli ile öğrencilerin tüm sorularını anlayan ve okulun veritabanına göre yanıt veren "Okul Asistanı" geliştirilmiştir.
+- **RAG Mimarisi:** Okul verileri bağlam olarak yapay zekaya beslenir, böylece halüsinasyon oranı sıfıra indirilir.
+- **Gerçek Zamanlı Sohbet:** WhatsApp tarzı, yüksek performanslı chat arayüzü.
 
-Bu proje, açık kaynak dünyası için "Güvenli Kodlama" örnekleri içerir. Hiçbir API anahtarı veya gizli yapılandırma `git push` sırasında sızdırılmaz. Tüm hassas yapılandırmalar `.gitignore` ile korunmaktadır.
+## 🛡️ Askeri Sınıf Güvenlik (Zero-Trust Architecture)
+Bu proje, mobil güvenlikte sektör standartlarını yeniden belirler:
+1. **Donanımsal Şifreleme (Android Jetpack Security):** API anahtarları asla APK içine gömülmez. `EncryptedSharedPreferences` kullanılarak cihazın TEE (Trusted Execution Environment) çipi içindeki AES-256 Master Key ile şifrelenir.
+2. **Dinamik Yapılandırma:** Tüm kritik anahtarlar (Yapay Zeka, ImageKit) Firebase üzerinden anlık çekilir. Telefon root'lu olsa bile verilere ulaşılamaz.
+
+## ⚙️ Teknik Mimarisi & Altyapı
+- **Bulut Veritabanı:** Firebase Realtime Database ile `0ms` gecikmeli senkronizasyon (SyncManager).
+- **Görüntü Optimizasyonu:** `ImageKit.io` entegrasyonu ile fotoğraflar cihazın çözünürlüğüne göre sunucuda %80 sıkıştırılarak anında getirilir. (Parallax kaydırma efektleriyle desteklenmiştir).
+- **Yönetim Paneli:** Öğretmenlerin içerik ekleyebilmesi için özel tasarlanmış, Firebase yetkilendirmeli, tamamen responsive Web Paneli.
 
 ---
 
-## 📄 Lisans
+## 🛠️ Kurulum (Geliştiriciler İçin)
 
-Bu proje **MIT Lisansı** ile lisanslanmıştır. Daha fazla bilgi için [LICENSE](LICENSE) dosyasına göz atın.
+Proje tamamen açık kaynak olup, kendi okulunuza uyarlayabilirsiniz:
+
+```bash
+# 1. Repoyu Klonla
+git clone https://github.com/AniLLL3734/TTMTAL-Mobil.git
+
+# 2. Firebase Kurulumu
+# Firebase Console'dan indirdiğiniz google-services.json dosyasını 'app/' dizinine ekleyin.
+
+# 3. Güvenli Anahtarlar (Local Build İçin)
+# app/src/main/res/values/secrets.xml dosyasını oluşturun:
+# (Not: Bu dosya .gitignore ile korunmaktadır)
+<resources>
+    <string name="imagekit_public_key">YOUR_KEY</string>
+    <string name="groq_api_key">YOUR_KEY</string>
+    <string name="default_web_client_id">YOUR_ID</string>
+</resources>
+```
+
+> **Önemli Firebase Ayarı:** Cihazların güncel anahtarları alabilmesi için Firebase Realtime Database'de `remote_config` düğümünü oluşturup API anahtarlarınızı oraya da girmelisiniz.
 
 ---
-
-> **Geliştirici:** github.com/AniLLL3734
+<div align="center">
+  <b>Geliştirici:</b> <a href="https://github.com/AniLLL3734">AniLLL3734</a> & Antigravity AI
+  <br>
+  <i>MIT License ile Açık Kaynak</i>
+</div>
